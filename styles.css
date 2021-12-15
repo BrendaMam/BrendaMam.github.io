@@ -647,7 +647,7 @@ input[type=text] {
 
 .search-list{
     border: 1px solid var(--primary-dark);
-    width: 318px;
+    width: 544px;
     height: 40px;
     border-radius: 8px;
     padding: 8px 0px 8px 16px;

@@ -14,7 +14,10 @@
     <header>
 
         <div class="identity">
-            <img src="../Assets/Images/logo.svg" alt="Logo GUINEA ECUATORIAL">
+            <a href="../index.html">
+                <img src="../Assets/Images/logo.svg" alt="Logo GUINEA ECUATORIAL">
+            </a>
+
             <div>
                 <h6>GUINEA ECUATORIAL</h6>
                 <p class="p2">Página Web Institucional del Gobierno</p>
@@ -51,11 +54,16 @@
     <div class="body">
 
         <div class="search-list">
-            <input class="input-search" type="text" placeholder="¿Qué quieres buscar?">
-            <button onclick="myFunction()" class="primary-button">Buscar</button>
+            <input class="input-search" type="text"
+                placeholder="Busca por dirección, código postal, provincia, lugar de interés...">
+
+                <a href="listado-resultado.html">
+                    <button onclick="myFunction()" class="primary-button">Buscar</button>
+                </a>
+            
         </div>
 
-        <div id="snackbar">
+        <!-- <div id="snackbar">
             <img class="icon-toast" src="../Assets/Images/check-circle.svg" alt="">
             <p class="p-toast">
                 Se obtuvieron 5 resultados
@@ -65,28 +73,22 @@
 
         <script>
             function myFunction() {
-              var x = document.getElementById("snackbar");
-              x.className = "show";
-              setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+                var x = document.getElementById("snackbar");
+                x.className = "show";
+                setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
             }
-        </script>
-
-
-
-
-
-
-
+        </script> -->
 
 
         <div class="table-filter">
             <div class="select-filter">
                 <select name="Filtrar" id="filter">
                     <option value="0">Filtrar por provincia</option>
-                    <option value="1">Provincia 1</option>
-                    <option value="2"> Provincia 2</option>
-                    <option value="3">Provincia 3</option>
-                    <option value="4"> Provincia 4</option>
+                    <option value="1">Bioko Norte</option>
+                    <option value="2"> Bioko Sur</option>
+                    <option value="3">Centro Sur</option>                  
+                    <option value="4"> Litoral</option>
+                    <option value="5"> Onnobón</option>
 
                 </select>
             </div>
@@ -106,11 +108,13 @@
                 </thead>
                 <tbody>
                     <tr>
-                      
-                        
+
+
                         <td class="td-2">
                             <img class="location-img" src="../Assets/Images/location.svg" alt="Ubicación">
-                            Carretera Aeropuerto Malabo, Guinea Ecuatorial
+                            CaCocoteros 72
+                            <br>
+                            Litoral, Bioko Norte
                         </td>
                         <td>
                             +240 333 09 45 50
@@ -126,11 +130,13 @@
                     </tr>
 
                     <tr>
-                       
-                        
+
+
                         <td class="td-2">
                             <img class="location-img" src="../Assets/Images/location.svg" alt="Ubicación">
-                            Cocoteros s/n, Malabo, Bioko Norte
+                            Calle Enrique Nvo, 178
+                            <br>
+                            Bioko Malabo
                         </td>
                         <td>
                             +240 222 273 444
@@ -146,10 +152,36 @@
                     </tr>
 
                     <tr>
-                       
+
                         <td class="td-2">
                             <img class="location-img" src="../Assets/Images/location.svg" alt="Ubicación">
-                            Calle Enrique Nvo, 178 - Bioko Norte. Malabo. Guinea Ecuatorial
+                            Carretera Aeropuerto 1452,
+                            <br>
+                            Centro Sur
+                        </td>
+                        <td>
+                            +240 333 09 45 50
+                        </td>
+                        <td>
+                            9:00 - 17:00
+                        </td>
+                        <td class="td-shore">
+                            <a href="detalle-de-centro.html">
+                                <button class="primary-button">
+                                    Ver información
+                                </button></a>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+
+
+                        <td class="td-2">
+                            <img class="location-img" src="../Assets/Images/location.svg" alt="Ubicación">
+                            Caretera Aeropuerto 889
+                            <br>
+                            Onnobón
                         </td>
                         <td>
                             +240 333 09 45 50
@@ -165,11 +197,13 @@
                     </tr>
 
                     <tr>
-                        
-                        
+
+
                         <td class="td-2">
                             <img class="location-img" src="../Assets/Images/location.svg" alt="Ubicación">
-                            Carretera Aeropuerto Malabo, Guinea Ecuatorial
+                            Cocoteros 7895
+                            <br>
+                            Bioko Norte
                         </td>
                         <td>
                             +240 333 09 45 50
@@ -184,29 +218,9 @@
                         </td>
                     </tr>
 
-                    <tr>
-                       
-                        
-                        <td class="td-2">
-                            <img class="location-img" src="../Assets/Images/location.svg" alt="Ubicación">
-                            Calle Enrique Nvo, 178 - Bioko Norte. Malabo. Guinea Ecuatorial
-                        </td>
-                        <td>
-                            +240 333 09 45 50
-                        </td>
-                        <td>
-                            9:00 - 17:00
-                        </td>
-                        <td class="td-shore">
-                            <button class="primary-button">
-                                Ver información
-                            </button>
-                        </td>
-                    </tr>
-    
-    
-    
-    
+
+
+
                 </tbody>
             </table>
 
