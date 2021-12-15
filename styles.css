@@ -56,6 +56,21 @@ body{
     margin: 0px
 }
 
+
+.text-area{
+    padding: 24px 0px;
+}
+
+.center-section{
+    display: flex;
+    justify-content: center;
+    margin: 16px 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
 /* ----------------------- Tipografía ----------------------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
@@ -1011,6 +1026,7 @@ tbody tr:nth-child(1) {
     flex-direction: column;
     justify-content: flex-start;
     width: 100%;
+    margin-bottom: 24px;
 
 }
 
@@ -1104,12 +1120,21 @@ form{
 
 }
 
+#birthday{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-dark);
+    font-size: 14px;
+    font-weight: 400;
+   
+
+}
+
 /* ----------------------- Footer ----------------------- */
 
 footer .up{
     background: var(--primary-dark);
     padding: 24px 80px;
-    
+    width: 100%;
 
 }
 
@@ -1272,4 +1297,199 @@ p .textinfo-datosvacunado {
 .textinfo-comprobante-right {
     flex: 50%;
     padding: 10px 0px;
+}
+
+/* ----------------------- Calendario ----------------------- */
+
+.select-date{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 24px;
+}
+
+.calendar{
+    background: white;
+    padding: 16px;
+    border: 1px solid var(--gray) ;
+    border-radius: 8px;
+    width: 352px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.calendar .month p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #898989;
+}
+
+#month{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url(Assets/Images/Dropdown-close.svg);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 5px;
+    border: none;
+    padding: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #898989;
+    font-size: 16px;
+    font-weight: 500;
+    width: 118px;
+    margin-left: 16px;
+  
+}
+
+#lnguage:active{
+    border: none;
+}
+
+.month{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.sf{
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.week {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.sn{
+    width: 32px;
+    height: 32px;
+    background: var(--light-blue);
+    border-radius: 8px;
+}
+
+.full{
+    width: 32px;
+    height: 32px;
+    background: var(--error);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full:hover{
+    background: var(--primary-blue);
+}
+
+.free{
+    width: 32px;
+    height: 32px;
+    background: var(--succes);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.free:hover{
+    background: var(--primary-blue);
+}
+
+.weekend{
+    width: 32px;
+    height: 32px;
+    background: var(--primary-soft);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.medium{
+    width: 32px;
+    height: 32px;
+    background: var(--warning);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.medium:hover{
+    background: var(--primary-blue);
+}
+
+.selected{
+    width: 32px;
+    height: 32px;
+    background: var(--primary-dark);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.days .week p{
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+.days{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.weekend .medium .free .full:hover{
+    background: var(--primary-dark);
+}
+
+
+.color-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 8px;
+    margin-left: 80px;
+}
+
+.color-text p{
+    margin-left: 16px;
+}
+
+.select-hour .input-area{
+    width: 118px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--gray);
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.select-hour{
+    margin-left: 24px;
+
+}
+
+.day-hour{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 24px;
 }
