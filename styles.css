@@ -49,7 +49,7 @@ body{
     --succes: #1AB759;
     --dark: #25282B;
     --light-blue: #F2F9FF;
-    --primary-soft: #90C3F4;
+    --primary-soft: #90C3F4; 
 }
 
 body{
@@ -1541,6 +1541,115 @@ p .textinfo-datosvacunado {
     margin: 16px 0px;
 }
 
+/* ----------------------- Lnading ----------------------- */
+.sub-seccion{
+    height: 56px;
+    width: 100%;
+    padding-left: 80px;
+    background: var(--primary-blue);
+    display: flex;
+    align-items: center;
+}
+
+.sub-seccion h6{
+    color: white;
+    text-decoration: underline;
+
+}
+
+.hero{
+    background-image: url("./Assets/Images/hero-Background.png");
+    height: 252px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 24px 80px;
+}
+
+.hero h3{
+    color: white;
+    text-align: left;
+   
+}
+
+.info-section{
+    padding: 16px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+
+}
+
+.section{
+    width: 300px;
+    height: 48px;
+    margin-right: 8px;
+}
+
+.section .line-button{
+    padding: 0px;
+    padding-bottom: 8px;
+    text-decoration: underline;
+}
+
+.fat-splitter{
+    height: 12px;
+    width: 100%;
+    background: var(--primary-dark);
+    margin: 24px 0px;
+}
+
+.button-card{
+    width: 300px;
+    margin-right: 8px;
+    background: var(--primary-soft);
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.extra{
+    width: 100%;
+    
+}
+
+.row .left{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.extra .left .line-button{
+    padding: 8px 0px 0px 0px;
+    padding-bottom: 8px;
+    text-decoration: underline;
+
+}
+
+.cta{
+    background: rgba(6, 31, 56, 0.89);
+    padding: 56px;
+    display: flex;
+    justify-content: center;
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+
+.cta h5{
+    color: white;
+    text-align: center;
+}
+
+.cta .p2 a{
+    color: var(--primary-blue);
+    text-decoration: underline;
+}
 
 
 
