@@ -215,6 +215,7 @@ input::placeholder{
 
 .primary-button-action:hover{
     background-color: var(--primary-dark);
+    cursor: pointer;
 }
 
 .primary-button-action:disabled{
@@ -250,11 +251,13 @@ input::placeholder{
 
 .secondary-button-action:hover{
     background: var(--light-blue);
+    cursor: pointer;
 }
 
 
 .primary-button:hover{
     background: var(--primary-dark);
+    cursor: pointer;
 }
 
 .third-button{
@@ -271,6 +274,7 @@ input::placeholder{
 
 .third-button:hover{
     background: var(--primary-dark);
+    cursor: pointer;
 }
 
 .four-button{
@@ -287,6 +291,7 @@ input::placeholder{
 
 .four-button:hover{
     background: var(--primary-dark);
+    cursor: pointer;
 }
 
 
@@ -298,6 +303,7 @@ input::placeholder{
 
 .login-button:hover{
     color: var(--primary-blue);
+    cursor: pointer;
 }
 
 .line-button{
@@ -313,10 +319,12 @@ input::placeholder{
 
 .line-button:hover{
     color: var(--primary-dark);
+    cursor: pointer;
 }
 
 .text-button:hover{
     color: var(--primary-blue);
+    cursor: pointer;
 }
 
 .button-text{
@@ -326,9 +334,13 @@ input::placeholder{
     font-weight: 500;
     font-size: 1.125rem;
     transition: 200ms ease-out all;
+    background: none;
+    border: none;
+    text-decoration: underline;
 }
 .button-text:hover{
     color: var(--primary-dark);
+    cursor: pointer;
 }
 
 /* ----------------------- Header ----------------------- */
@@ -648,18 +660,40 @@ input[type=text] {
 
 .title-area{
     
-    padding: 40px 0px;
+    padding: 24px 40px 40px 40px;
     background: var(--primary-dark);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 32px;
+   
+    margin-bottom: 24px;
     
 }
 .title-area h4{
     color: white;
     margin-bottom: 16px;
+}
+
+.title-area .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.back-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+
+.back-button .button-text{
+    color: white;
+}
+
+.back-button .button-text:hover{
+    color: var(--light-blue);
 }
 
 
@@ -676,7 +710,7 @@ input[type=text] {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 0px 0px 24px 0px;
+    margin: 24px 0px 24px 0px;
    
 }
 
@@ -1650,6 +1684,7 @@ p .textinfo-datosvacunado {
     color: var(--primary-blue);
     text-decoration: underline;
 }
+
 
 
 
