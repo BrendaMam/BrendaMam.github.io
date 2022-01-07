@@ -176,6 +176,14 @@ input::placeholder{
     line-height: 20px;
 }
 
+.subtitle2{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-dark);
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+}
+
 
 /* ----------------------- Botones ----------------------- */
 
@@ -1068,6 +1076,10 @@ tbody tr:nth-child(1) {
 
 }
 
+.intro-area h5{
+    margin-bottom: 32px;
+}
+
 .intro-area ol{
     margin-top: 24px;
     margin-bottom: 24px;
@@ -1136,7 +1148,7 @@ form{
     width: 292px;
 }
 
-.section{
+.section-form{
     margin: 24px 0px;
 }
 
@@ -1684,7 +1696,68 @@ p .textinfo-datosvacunado {
     text-decoration: underline;
 }
 
+/* ----------------------- Stepper ----------------------- */
 
+.stepper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
+.stepper .in{
+    background: var(--primary-blue);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.stepper .in h6{
+    color: white;
+}
+
+.line1{
+    width: 248px;
+    height: 4px;
+    background: linear-gradient(270deg, #E8E8E8 0%, #1577D2 109.37%);
+}
+
+.stepper .next{
+    background: var(--white-gray);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stepper .next .subtitle2{
+    color: var(--gray);
+}
+
+.line2{
+    width: 248px;
+    height: 4px;
+    background: var(--white-gray);
+
+}
+
+.stepper .check{
+    background: var(--succes);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line3{
+    width: 246px;
+    height: 4px;
+    background: linear-gradient(270deg, #1577D2 0%, #27AE60 109.37%);
+}
 
