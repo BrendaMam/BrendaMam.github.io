@@ -418,7 +418,7 @@ header .identity img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 16px 80px;
+    padding: 0px 80px 16px 80px;
     min-width: 800px;
     margin-bottom: 32px;
 }
@@ -660,11 +660,14 @@ input[type=text] {
 
 .title-area{
     
-    padding: 24px 40px 40px 40px;
+    padding: 40px;
     background: var(--primary-dark);
     display: flex;
     flex-direction: column;
-   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin-bottom: 24px;
     
 }
@@ -673,28 +676,16 @@ input[type=text] {
     margin-bottom: 16px;
 }
 
-.title-area .title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+/* ----------------------- Back button ----------------------- */
 
 .back-button{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 32px;
 }
 
 
-.back-button .button-text{
-    color: white;
-}
 
-.back-button .button-text:hover{
-    color: var(--light-blue);
-}
 
 
 /* ----------------------- Buscador listado ----------------------- */
@@ -863,6 +854,14 @@ tbody tr:nth-child(1) {
 }
 
 /* ----------------------- Detalle de centro de vacunación ----------------------- */
+.principal-actions{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 80px;
+}
+
 .detalle-centros-vac{
     display: flex;
     justify-content: space-between;
