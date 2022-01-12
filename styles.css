@@ -1576,6 +1576,7 @@ p .textinfo-datosvacunado {
     display: flex;
     flex-direction: row;
     margin-top: 40px;
+    justify-content: center;
 }
 
 
@@ -1759,5 +1760,17 @@ p .textinfo-datosvacunado {
     width: 246px;
     height: 4px;
     background: linear-gradient(270deg, #1577D2 0%, #27AE60 109.37%);
+}
+
+.line4{
+    width: 244px;
+    height: 4px;
+    background: #27AE60 ;
+}
+
+
+.actions .secondary-button-action, .primary-button-action{
+    width: 160px;
+
 }
 
