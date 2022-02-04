@@ -3,14 +3,32 @@
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8L6J2XM7PD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8L6J2XM7PD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-8L6J2XM7PD');
-</script>
+        gtag('config', 'G-8L6J2XM7PD');
+    </script>
+
+    <script type="text/javascript">
+        (function (f, b) {
+            if (!b.__SV) {
+                var e, g, i, h; window.mixpanel = b; b._i = []; b.init = function (e, f, c) {
+                    function g(a, d) { var b = d.split("."); 2 == b.length && (a = a[b[0]], d = b[1]); a[d] = function () { a.push([d].concat(Array.prototype.slice.call(arguments, 0))) } } var a = b; "undefined" !== typeof c ? a = b[c] = [] : c = "mixpanel"; a.people = a.people || []; a.toString = function (a) { var d = "mixpanel"; "mixpanel" !== c && (d += "." + c); a || (d += " (stub)"); return d }; a.people.toString = function () { return a.toString(1) + ".people (stub)" }; i = "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+                    for (h = 0; h < i.length; h++)g(a, i[h]); var j = "set set_once union unset remove delete".split(" "); a.get_group = function () { function b(c) { d[c] = function () { call2_args = arguments; call2 = [c].concat(Array.prototype.slice.call(call2_args, 0)); a.push([e, call2]) } } for (var d = {}, e = ["get_group"].concat(Array.prototype.slice.call(arguments, 0)), c = 0; c < j.length; c++)b(j[c]); return d }; b._i.push([e, f, c])
+                }; b.__SV = 1.2; e = f.createElement("script"); e.type = "text/javascript"; e.async = !0; e.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ?
+                    MIXPANEL_CUSTOM_LIB_URL : "file:" === f.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"; g = f.getElementsByTagName("script")[0]; g.parentNode.insertBefore(e, g)
+            }
+        })(document, window.mixpanel || []);
+
+        // Enabling the debug mode flag is useful during implementation,
+        // but it's recommended you remove it for production
+        mixpanel.init('1ed12604ebde3bcda26dccbb611b6f7e', { debug: true });
+        mixpanel.track('Sign up');
+    </script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,11 +79,17 @@
         <p class="p3">Trámita tu cita para poder solicitar la reposición de tu tarjeta de descuentos</p>
         <br>
         <div class="stepper">
-            <div class="in"><h6>1</h6></div>
+            <div class="in">
+                <h6>1</h6>
+            </div>
             <div class="line1"></div>
-            <div class="next"> <p class="subtitle2">2</p></div>
+            <div class="next">
+                <p class="subtitle2">2</p>
+            </div>
             <div class="line2"></div>
-            <div class="next"> <p class="subtitle2">3</p></div>
+            <div class="next">
+                <p class="subtitle2">3</p>
+            </div>
         </div>
     </div>
 
@@ -80,20 +104,23 @@
 
         <div class="intro-area">
             <h5>1. Completa el siguiente formulario. </h5>
-        
-           <p>Además del comprobante de reposicion de tarjeta de descuentos, es importante que presentes la siguiente documentación:</p>
-          
-           <br>
-            <p>1. En caso de robo, presentar denuncia la cual debe ser levantada ante la Comisaría de Policía del lugar donde ocurrieron los hechos.</p>
+
+            <p>Además del comprobante de reposicion de tarjeta de descuentos, es importante que presentes la siguiente
+                documentación:</p>
+
+            <br>
+            <p>1. En caso de robo, presentar denuncia la cual debe ser levantada ante la Comisaría de Policía del lugar
+                donde ocurrieron los hechos.</p>
             <br>
             <p>2. Presentar alguno de los siguientes documentos para acreditar la nacionalidad:</p>
-            <ol> a. Llena el siguiente formulario. 
-            <br>
-            b. Ubica tu módulo más cercano.</ol>
-            
+            <ol> a. Llena el siguiente formulario.
+                <br>
+                b. Ubica tu módulo más cercano.
+            </ol>
+
             <p>3.Identificación oficial</p>
 
-          
+
         </div>
 
         <form>
@@ -107,21 +134,24 @@
                     <div class="primary-input">
                         <p>Nombre(s)</p>
                         <div class="input-area">
-                            <input type="text" id="name" placeholder="Nombre" onkeyup="manage(this)" autocomplete="on"/>
+                            <input type="text" id="name" placeholder="Nombre" onkeyup="manage(this)"
+                                autocomplete="on" />
                         </div>
                     </div>
 
                     <div class="primary-input">
                         <p>Primer apellido</p>
                         <div class="input-area">
-                            <input type="text" id="apellido" placeholder="Apellido" onkeyup="manage(this)" autocomplete="on"/>
+                            <input type="text" id="apellido" placeholder="Apellido" onkeyup="manage(this)"
+                                autocomplete="on" />
                         </div>
                     </div>
 
                     <div class="primary-input">
                         <p>Segundo apellido</p>
                         <div class="input-area">
-                            <input type="text" id="apellido" placeholder="Apellido" onkeyup="manage(this)" autocomplete="on"/>
+                            <input type="text" id="apellido" placeholder="Apellido" onkeyup="manage(this)"
+                                autocomplete="on" />
                         </div>
                     </div>
 
@@ -144,7 +174,7 @@
                         <p>Fecha de nacimiento</p>
                         <div class="input-area">
                             <input type="date" id="birthday" name="birthday" placeholder="dd/mm/aaaa">
-                            
+
                         </div>
                     </div>
 
@@ -165,14 +195,16 @@
                     <div class="primary-input">
                         <p>Correo electrónico</p>
                         <div class="input-area">
-                            <input type="email" name="email" placeholder="correo@ejemplo.com" autocomplete="on" onkeyup="manage(this)"/>
+                            <input type="email" name="email" placeholder="correo@ejemplo.com" autocomplete="on"
+                                onkeyup="manage(this)" />
                         </div>
                     </div>
 
                     <div class="primary-input">
                         <p>Teléfono 1</p>
                         <div class="input-area">
-                            <input type="text" name="number" placeholder="Teléfono" autocomplete="on" onkeyup="manage(this)"/>
+                            <input type="text" name="number" placeholder="Teléfono" autocomplete="on"
+                                onkeyup="manage(this)" />
                         </div>
                     </div>
 
@@ -184,7 +216,7 @@
                         <p class="p2">Opcional</p>
                     </div>
 
-                    
+
 
 
 
@@ -207,21 +239,23 @@
                     <div class="primary-input">
                         <p>Calle</p>
                         <div class="input-area">
-                            <input type="text" name="calle" placeholder="Calle" autocomplete="on" onkeyup="manage(this)"/>
+                            <input type="text" name="calle" placeholder="Calle" autocomplete="on"
+                                onkeyup="manage(this)" />
                         </div>
                     </div>
 
                     <div class="secundary-input">
                         <p>No. Exterior</p>
                         <div class="input-area">
-                            <input type="text" name="calle" placeholder="Calle" autocomplete="on" onkeyup="manage(this)" />
+                            <input type="text" name="calle" placeholder="Calle" autocomplete="on"
+                                onkeyup="manage(this)" />
                         </div>
                     </div>
 
                     <div class="secundary-input">
                         <p>No. Interior</p>
                         <div class="input-area">
-                            <input type="text" name="calle" placeholder="Calle" autocomplete="on"  />
+                            <input type="text" name="calle" placeholder="Calle" autocomplete="on" />
                         </div>
                         <p class="p2">Opcional</p>
                     </div>
@@ -229,21 +263,24 @@
                     <div class="primary-input">
                         <p>Región</p>
                         <div class="input-area">
-                            <input type="text" name="Region" placeholder="Región" autocomplete="on"onkeyup="manage(this)" />
+                            <input type="text" name="Region" placeholder="Región" autocomplete="on"
+                                onkeyup="manage(this)" />
                         </div>
                     </div>
 
                     <div class="primary-input">
                         <p>Provinica</p>
                         <div class="input-area">
-                            <input type="text" name="Provincia" placeholder="Provincia" autocomplete="on" onkeyup="manage(this)" />
+                            <input type="text" name="Provincia" placeholder="Provincia" autocomplete="on"
+                                onkeyup="manage(this)" />
                         </div>
                     </div>
 
                     <div class="primary-input">
                         <p>Municipio</p>
                         <div class="input-area">
-                            <input type="text" name="Municipio" placeholder="Municipio" autocomplete="on" onkeyup="manage(this)" />
+                            <input type="text" name="Municipio" placeholder="Municipio" autocomplete="on"
+                                onkeyup="manage(this)" />
                         </div>
                     </div>
 
@@ -260,15 +297,15 @@
 
             </div>
 
-        </form>          
+        </form>
 
         <div class="button-area">
             <a href="centros-de-extravio.html">
-                <button type="submit" class="primary-button-action" id="submit" >Siguiente</button>
+                <button type="submit" class="primary-button-action" id="submit">Siguiente</button>
             </a>
 
-         
-           
+
+
         </div>
 
     </div>
@@ -366,7 +403,7 @@
 <script>
     function manage(txt) {
         var bt = document.getElementById('submit');
-        var ele = document.getElementsByTagName('input'); 
+        var ele = document.getElementsByTagName('input');
 
         // Loop through each element.
         for (i = 0; i < ele.length; i++) {
