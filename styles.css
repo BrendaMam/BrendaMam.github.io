@@ -1626,14 +1626,13 @@ p .textinfo-datosvacunado {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
-
 }
 
 .section{
     width: 300px;
-    height: 48px;
+    height: auto;
     margin-right: 8px;
+    margin-bottom:24px;
 }
 
 .section .line-button{
@@ -1646,7 +1645,7 @@ p .textinfo-datosvacunado {
     height: 12px;
     width: 100%;
     background: var(--primary-dark);
-    margin: 24px 0px;
+    margin: 0px 0px 24px 0px;
 }
 
 .button-card{
@@ -1772,5 +1771,20 @@ p .textinfo-datosvacunado {
 .actions .secondary-button-action, .primary-button-action{
     width: 160px;
 
+}
+
+/* ----------------------- Home por sección ----------------------- */
+.home-menu .section > .p2{
+    margin-top: 8px;
+}
+.home-menu{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 24px;
+}
+
+.home-menu > .section{
+    margin-right: 16px;
 }
 
