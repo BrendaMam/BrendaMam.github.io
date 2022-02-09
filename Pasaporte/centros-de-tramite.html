@@ -44,7 +44,7 @@
     <header>
 
         <div class="identity">
-            <a href="../index.html">
+            <a href="../index.html" onclick="mixpanel.track('Boton-Home')">
                 <img src="../Assets/Images/logo.svg" alt="Logo GUINEA ECUATORIAL">
             </a>
 
@@ -93,7 +93,7 @@
     <div class="principal-actions">
         <a class="back-button" href="./solicitud-pasaporte.html">
             <img src="../Assets/Images/arrow_back.svg" alt="regresar">
-            <button class="button-text">Volver al paso 1</button>
+            <button class="button-text" onclick="mixpanel.track('Boton-VolverPaso1-Pasaporte')">Volver al paso 1</button>
         </a>
     </div>
 
@@ -267,7 +267,9 @@
 
 
             <a href="cita.html">
-                <button class="primary-button-action"onclick="mixpanel.track('Boton-ir-pasaporte')" id="Siguiente" disabled>Siguiente</button>
+                <button class="primary-button-action"onclick="mixpanel.track('Boton-ir-pasaporte')" id="Siguiente" disabled>
+                    Siguiente
+                </button>
             </a>
 
             <script>
