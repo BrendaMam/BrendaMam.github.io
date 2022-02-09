@@ -66,14 +66,17 @@
                 <div class="input-area">
                     <input type="password" placeholder="Escriba su contraseña">
                 </div>
-                <a href=""">
+                <a href="">
                     <p class="p2 text-button">¿Olvidaste tu contraseña?</p>
                 </a>
             </div>
 
             <div class="button-area">
                 <button class="primary-button bottom-buttons">Entrar a mi cuenta</button>
-                <button class="line-button bottom-buttons">Crear cuenta</button>
+                <a href="../Registro/registro.html">
+                    <button onclick="mixpanel.track('Boton-crearcuenta-desdelogin')" class="line-button bottom-buttons">Crear cuenta</button>
+                    
+                </a>
             </div>
 
         </div>
