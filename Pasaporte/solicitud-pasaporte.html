@@ -19,7 +19,7 @@
 
         gtag('config', 'G-8L6J2XM7PD');
     </script>
-
+    
     <script type="text/javascript">
         (function (f, b) {
             if (!b.__SV) {
@@ -36,6 +36,9 @@
         mixpanel.init('1ed12604ebde3bcda26dccbb611b6f7e', { debug: true });
         mixpanel.track('Sign up');
     </script>
+
+    <!-- Script for second phone validation-->
+    <script src="../Scripts/phone-validation.js"></script>
 
 </head>
 
@@ -196,15 +199,14 @@
                     <div class="primary-input">
                         <p>Teléfono 1</p>
                         <div class="input-area">
-                            <input type="text" name="number" placeholder="Teléfono" autocomplete="on"
-                                onkeyup="manage(this)" />
+                            <input type="text" name="number" id="phone1" placeholder="Teléfono" autocomplete="on"/>
                         </div>
                     </div>
 
                     <div class="primary-input">
                         <p>Teléfono 2</p>
                         <div class="input-area">
-                            <input type="text" name="number" placeholder="Teléfono" autocomplete="on" />
+                            <input type="text" name="number" id="phone2" placeholder="Teléfono" autocomplete="on" />
                         </div>
                         <p class="p2">Opcional</p>
                     </div>
@@ -287,7 +289,7 @@
 
         <div class="button-area">
             <a href="centros-de-tramite.html">
-                <button type="submit" class="primary-button-action" id="submit">Siguiente</button>
+                <button type="submit" class="primary-button-action" id="submit" onclick="mixpanel.track('phone2'); phonevalidation();" >Siguiente</button>
             </a>
 
 
