@@ -39,6 +39,8 @@
 
     <!-- Script for second phone validation-->
     <script src="../Scripts/phone-validation.js"></script>
+    <!--Script track estado-->
+    <script src="../Scripts/estado.js"></script>
 
 </head>
 
@@ -255,7 +257,7 @@
                     <div class="primary-input">
                         <p>Estado</p>
                         <div class="input-area">
-                            <input type="text" name="Estado" placeholder="Estado" autocomplete="on" />
+                            <input type="text" name="Estado" placeholder="Estado" autocomplete="on" id="estado" />
                         </div>
                     </div>
 
@@ -283,8 +285,8 @@
         </form>
 
         <div class="button-area">
-            <a href="centros-de-tramite.html">
-                <button type="submit" class="primary-button-action" id="submit" onclick="mixpanel.track('phone2'); phonevalidation(); Age()" >Siguiente</button>
+            <a href="#">
+                <button type="submit" class="primary-button-action" id="submit" onclick="mixpanel.track('phone2'); phonevalidation(); estado(); Age();" >Siguiente</button>
             </a>
 
 
