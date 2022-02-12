@@ -12,7 +12,14 @@
 
 function estado(){
     var estado = document.getElementById("estado").value
-
-    mixpanel.track("Ubicación: "+ estado)
-    console.log(estado)
+    
+    if(estado == ""){
+        console.log("No se recibió información del estado")
+        mixpanel.track("empty-state")
+    }else{
+        console.log(estado)
+        mixpanel.track('Estado registrado', {'Estado': estado});
+        
+    }
 }
+    
