@@ -1,5 +1,5 @@
 
-function gender () {
+function gender() {
     var fema= document.getElementById('Mujer')
     var male= document.getElementById('Hombre')
     
