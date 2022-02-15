@@ -16,5 +16,5 @@ function age() {
   age = Math.floor(((today - dateBirthday) / (1000 * 60 * 60 * 24) / 365));
 
   // console.log ('La edad es: ' + age + ' Años')
-  mixpanel.track('Age', {'Edad': age});
+  mixpanel.track({'Edad': age});
 }
