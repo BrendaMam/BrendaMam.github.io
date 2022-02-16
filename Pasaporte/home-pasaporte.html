@@ -76,7 +76,7 @@
     </div>
 
     <div class="principal-actions">
-        <a class="back-button" href="../index.html">
+        <a class="back-button" href="../index.html" onclick="mixpanel.track('home-pasaporte-boton-regresar')">
             <img src="../Assets/Images/arrow_back.svg" alt="regresar">
             <button class="button-text">Volver a la página de inicio</button>
         </a>
@@ -93,15 +93,15 @@
 
 
             <div class="section">
-                <a href="solicitud-pasaporte.html" class="line-button">
+                <a href="solicitud-pasaporte.html" class="line-button" onclick="mixpanel.track('home-pasaporte-solicitud-pasaporte')">
                     Solicitar pasaporte
                 </a>
                 <p class="p2">Solicitar por primera vez un pasaporte</p>
             </div>
 
             <div class="section">
-                <a href="../Extravío/solicitud-repuesto.html" class="line-button">
-                    Reposición pasaporte
+                <a href="../Extravío/solicitud-repuesto.html" class="line-button" onclick="mixpanel.track('home-pasaporte-solicitud-reposición')">
+                    Reposición pasaporte 
                 </a>
                 <p class="p2">Si extraviaste tu pasaporte solicita aquí la reposición</p>
             </div>
