@@ -14,7 +14,7 @@ function gender() {
         console.log("Selecciona Mujer")
        
     }  else {
-            mixpanel.track('Hombre',{'Gender': 'Male'});
+            mixpanel.track({'Gender': 'Male'});
             
         }
    
